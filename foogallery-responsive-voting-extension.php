@@ -13,7 +13,7 @@
  * @wordpress-plugin
  * Plugin Name: FooGallery - Responsive Voting
  * Description: Responsive thumbnail template with wp-polls plugin integration
- * Version:     1.0.1
+ * Version:     1.1
  * Author:      Danny Pesses
  * Author URI:  
  * License:     GPL-2.0+
@@ -23,7 +23,7 @@
 if ( !class_exists( 'Responsive_Voting_Template_FooGallery_Extension' ) ) {
 
 	define('RESPONSIVE_VOTING_TEMPLATE_FOOGALLERY_EXTENSION_URL', plugin_dir_url( __FILE__ ));
-	define('RESPONSIVE_VOTING_TEMPLATE_FOOGALLERY_EXTENSION_VERSION', '1.0.1');
+	define('RESPONSIVE_VOTING_TEMPLATE_FOOGALLERY_EXTENSION_VERSION', '1.1');
 
 	require_once( 'foogallery-responsive-voting-init.php' );
 
@@ -407,13 +407,13 @@ if ( !class_exists( 'Responsive_Voting_Template_FooGallery_Extension' ) ) {
 						'type'    => 'icon',
 						'default' => 'border-style-square-white',
 						'choices' => array(
-							'border-style-square-white' => array( 'label' => __( 'Square white border with shadow' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-square-white.png' ),
-							'border-style-circle-white' => array( 'label' => __( 'Circular white border with shadow' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-circle-white.png' ),
-							'border-style-square-black' => array( 'label' => __( 'Square Black' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-square-black.png' ),
-							'border-style-circle-black' => array( 'label' => __( 'Circular Black' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-circle-black.png' ),
-							'border-style-inset' => array( 'label' => __( 'Square Inset' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-square-inset.png' ),
-							'border-style-rounded' => array( 'label' => __( 'Plain Rounded' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-plain-rounded.png' ),
-							'' => array( 'label' => __( 'Plain' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-none.png' ),
+							'border-style-square-white' => array( 'label' => __( 'Square white border with shadow' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-square-white.png' ),
+							'border-style-circle-white' => array( 'label' => __( 'Circular white border with shadow' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-circle-white.png' ),
+							'border-style-square-black' => array( 'label' => __( 'Square Black' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-square-black.png' ),
+							'border-style-circle-black' => array( 'label' => __( 'Circular Black' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-circle-black.png' ),
+							'border-style-inset' => array( 'label' => __( 'Square Inset' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-square-inset.png' ),
+							'border-style-rounded' => array( 'label' => __( 'Plain Rounded' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-plain-rounded.png' ),
+							'' => array( 'label' => __( 'Plain' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-none.png' ),
 						)
 					),
 					array(
@@ -439,12 +439,12 @@ if ( !class_exists( 'Responsive_Voting_Template_FooGallery_Extension' ) ) {
 						'type'    => 'icon',
 						'default' => 'hover-effect-zoom',
 						'choices' => array(
-							'hover-effect-zoom' => array( 'label' => __( 'Zoom' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/hover-effect-icon-zoom.png' ),
-							'hover-effect-zoom2' => array( 'label' => __( 'Zoom 2' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/hover-effect-icon-zoom2.png' ),
-							'hover-effect-zoom3' => array( 'label' => __( 'Zoom 3' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/hover-effect-icon-zoom3.png' ),
-							'hover-effect-plus' => array( 'label' => __( 'Plus' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/hover-effect-icon-plus.png' ),
-							'hover-effect-circle-plus' => array( 'label' => __( 'Cirlce Plus' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/hover-effect-icon-circle-plus.png' ),
-							'hover-effect-eye' => array( 'label' => __( 'Eye' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/hover-effect-icon-eye.png' )
+							'hover-effect-zoom' => array( 'label' => __( 'Zoom' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/hover-effect-icon-zoom.png' ),
+							'hover-effect-zoom2' => array( 'label' => __( 'Zoom 2' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/hover-effect-icon-zoom2.png' ),
+							'hover-effect-zoom3' => array( 'label' => __( 'Zoom 3' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/hover-effect-icon-zoom3.png' ),
+							'hover-effect-plus' => array( 'label' => __( 'Plus' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/hover-effect-icon-plus.png' ),
+							'hover-effect-circle-plus' => array( 'label' => __( 'Cirlce Plus' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/hover-effect-icon-circle-plus.png' ),
+							'hover-effect-eye' => array( 'label' => __( 'Eye' , 'foogallery-responsive-voting' ), 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/hover-effect-icon-eye.png' )
 						),
 					),
 					// array(
@@ -547,13 +547,13 @@ if ( !class_exists( 'Responsive_Voting_Template_FooGallery_Extension' ) ) {
 					//	'type'    => 'icon',
 					//	'default' => 'border-style-square-white',
 					//	'choices' => array(
-					//		'border-style-square-white' => array('label' => 'Square white border with shadow', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-square-white.png'),
-					//		'border-style-circle-white' => array('label' => 'Circular white border with shadow', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-circle-white.png'),
-					//		'border-style-square-black' => array('label' => 'Square Black', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-square-black.png'),
-					//		'border-style-circle-black' => array('label' => 'Circular Black', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-circle-black.png'),
-					//		'border-style-inset' => array('label' => 'Square Inset', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-square-inset.png'),
-					//		'border-style-rounded' => array('label' => 'Plain Rounded', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-plain-rounded.png'),
-					//		'' => array('label' => 'Plain', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_URL . 'assets/border-style-icon-none.png'),
+					//		'border-style-square-white' => array('label' => 'Square white border with shadow', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-square-white.png'),
+					//		'border-style-circle-white' => array('label' => 'Circular white border with shadow', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-circle-white.png'),
+					//		'border-style-square-black' => array('label' => 'Square Black', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-square-black.png'),
+					//		'border-style-circle-black' => array('label' => 'Circular Black', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-circle-black.png'),
+					//		'border-style-inset' => array('label' => 'Square Inset', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-square-inset.png'),
+					//		'border-style-rounded' => array('label' => 'Plain Rounded', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-plain-rounded.png'),
+					//		'' => array('label' => 'Plain', 'img' => FOOGALLERY_DEFAULT_TEMPLATES_EXTENSION_SHARED_URL . 'img/admin/border-style-icon-none.png'),
 					//	)
 					//),
 				)
