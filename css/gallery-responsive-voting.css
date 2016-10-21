@@ -1,0 +1,365 @@
+/*
+Add any CSS that will be needed by your Responsive Voting gallery template. This will be output to the frontend
+*/
+
+.item-sizer { width:100%; }
+
+.foogallery-container .item {
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+.enable-masonry-off .item {
+	float: left;
+}
+
+.cbinl {
+	width:100%;
+}
+
+.foogallery-responsive-voting .item a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.foogallery-responsive-voting .item,
+/*.enable-masonry-off */
+#content .foogallery-responsive-voting form img {
+	width: 100%;
+}
+
+@media (min-width:480px) {
+	.foogallery-responsive-voting .item {
+		width: 50%;
+	}
+}
+@media (min-width:720px) {
+	.foogallery-responsive-voting .item {
+		width: 20%;
+	}
+}
+
+input.poll-answer-radio[type="radio"], input.poll-answer-checkbox[type="checkbox"],
+.item a input[type=radio], .poll-answer-radio {
+	margin:4px;
+/*	display:none;*/
+}
+
+.item a input[type=radio].form-control {
+	height:initial;
+	width:initial;
+	display:initial;
+	margin-right:4px;
+	vertical-align:initial;
+}
+
+.item.highlighted a {
+	background-color:#9df;
+}
+
+.foogallery-responsive-voting:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.foogallery-responsive-voting a {
+    display: inline-block;
+	margin-right: 5px;
+/*	margin-bottom: 5px;*/
+	overflow: hidden;
+}
+
+.foogallery-responsive-voting a img {
+	border-radius: 0;
+	display: block;
+	width:100%;
+	-webkit-transition: none;
+	transition: none;
+}
+
+/* Horizontal alignment */
+.foogallery-responsive-voting,
+.foogallery-responsive-voting a {
+/*	line-height: 0;
+	font-size: 0;*/
+}
+.foogallery-responsive-voting.alignment-left {
+	text-align: left;
+}
+
+.foogallery-responsive-voting.alignment-center {
+	text-align: center;
+}
+
+.foogallery-responsive-voting.alignment-right {
+	text-align: right;
+}
+
+/* Gutter widths */
+.foogallery-responsive-voting.spacing-width-5 a,
+.foogallery-responsive-voting.spacing-width-5 > div,
+.foogallery-responsive-voting.spacing-width-5.foogallery-link-none img {
+	padding: 5px;
+}
+
+.foogallery-responsive-voting.spacing-width-10 a,
+.foogallery-responsive-voting.spacing-width-10 > div,
+.foogallery-responsive-voting.spacing-width-10.foogallery-link-none img {
+	padding: 10px;
+}
+
+.foogallery-responsive-voting.spacing-width-15 a,
+.foogallery-responsive-voting.spacing-width-15 > div,
+.foogallery-responsive-voting.spacing-width-15.foogallery-link-none img {
+	padding: 15px;
+}
+
+.foogallery-responsive-voting.spacing-width-20 a,
+.foogallery-responsive-voting.spacing-width-20 > div,
+.foogallery-responsive-voting.spacing-width-20.foogallery-link-none img {
+	padding: 20px;
+}
+
+.foogallery-responsive-voting.spacing-width-25 a,
+.foogallery-responsive-voting.spacing-width-25 > div,
+.foogallery-responsive-voting.spacing-width-25.foogallery-link-none img {
+	padding: 25px;
+}
+
+/* Border styles */
+.foogallery-responsive-voting.border-style-rounded a,
+.foogallery-responsive-voting.border-style-rounded.foogallery-link-none img {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.foogallery-responsive-voting.border-style-square-white a,
+.foogallery-responsive-voting.border-style-square-white.foogallery-link-none img {
+	border: 5px solid #FFF !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.foogallery-responsive-voting.border-style-circle-white a,
+.foogallery-responsive-voting.border-style-circle-white.foogallery-link-none img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 5px solid #FFF !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.foogallery-responsive-voting.border-style-circle-black a,
+.foogallery-responsive-voting.border-style-circle-black.foogallery-link-none img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 3px solid #000 !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.foogallery-responsive-voting.border-style-square-black a,
+.foogallery-responsive-voting.border-style-square-black.foogallery-link-none img {
+	border: 3px solid #000 !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.foogallery-responsive-voting.border-style-inset a {
+	position: relative;
+	max-width: 100%;
+	content: "";
+}
+
+.foogallery-responsive-voting.border-style-inset a:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: inset 0 0 20px #000;
+	-moz-box-shadow: inset 0 0 20px #000;
+	-webkit-box-shadow: inset 0 0 20px #000;
+}
+
+/* Hover Effects */
+
+.foogallery-responsive-voting.hover-effect-zoom a,
+.foogallery-responsive-voting.hover-effect-zoom2 a,
+.foogallery-responsive-voting.hover-effect-zoom3 a,
+.foogallery-responsive-voting.hover-effect-plus a,
+.foogallery-responsive-voting.hover-effect-circle-plus a,
+.foogallery-responsive-voting.hover-effect-eye a,
+.foogallery-responsive-voting.hover-effect-tint {
+	position: relative;
+}
+
+.foogallery-responsive-voting.hover-effect-zoom a:before,
+.foogallery-responsive-voting.hover-effect-zoom2 a:before,
+.foogallery-responsive-voting.hover-effect-zoom3 a:before,
+.foogallery-responsive-voting.hover-effect-plus a:before,
+.foogallery-responsive-voting.hover-effect-circle-plus a:before,
+.foogallery-responsive-voting.hover-effect-eye a:before,
+.foogallery-responsive-voting.hover-effect-tint a:before {
+	content: "";
+	display: block;
+/*	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+	position:relative;
+	background: none no-repeat center center;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.foogallery-responsive-voting.hover-effect-zoom a:hover:before {
+	background: rgba(0,0,0, 0.5) url('img/zoom.png') no-repeat center center;
+}
+
+.foogallery-responsive-voting.hover-effect-zoom2 a:hover:before {
+	background:rgba(0,0,0, 0.5) url('img/zoom2.png') no-repeat center center;
+}
+
+.foogallery-responsive-voting.hover-effect-zoom3 a:hover:before {
+	background:rgba(0,0,0, 0.5) url('img/zoom3.png') no-repeat center center;
+}
+
+.foogallery-responsive-voting.hover-effect-plus a:hover:before {
+	background:rgba(0,0,0, 0.5) url('img/plus.png') no-repeat center center;
+}
+
+.foogallery-responsive-voting.hover-effect-circle-plus a:hover:before {
+	background:rgba(0,0,0, 0.5) url('img/circle-plus.png') no-repeat center center;
+}
+
+.foogallery-responsive-voting.hover-effect-eye a:hover:before {
+	background:rgba(0,0,0, 0.5) url('img/eye.png') no-repeat center center;
+}
+
+.foogallery-responsive-voting.hover-effect-tint a:hover:before {
+	background-image: none !important;
+	background-color:rgba(0,0,0, 0.5);
+}
+
+.foogallery-responsive-voting.hover-effect-color a img {
+	background: none !important;
+	filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.foogallery-responsive-voting.hover-effect-color a:hover img {
+	filter: none;
+	-webkit-filter: none;
+	opacity: 1 !important;
+}
+
+.foogallery-responsive-voting.hover-effect-color a:hover:before {
+	background: none !important;
+}
+
+.foogallery-responsive-voting.hover-effect-none a:before,
+.foogallery-responsive-voting.hover-effect-none a:before:hover {
+	background: none !important;
+}
+
+/* Loading Styles */
+.foogallery-responsive-voting-loading {
+	min-height: 11px;
+	padding:1em;
+	background: transparent url(data:image/gif;base64,R0lGODlhEAALAPQAAP///wAAANra2tDQ0Orq6gYGBgAAAC4uLoKCgmBgYLq6uiIiIkpKSoqKimRkZL6+viYmJgQEBE5OTubm5tjY2PT09Dg4ONzc3PLy8ra2tqCgoMrKyu7u7gAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA) no-repeat center center;
+}
+
+.foogallery-responsive-voting-loading a,
+.foogallery-responsive-voting-loading img {
+	display:none;
+}
+
+.foogallery-responsive-voting a.thumbnail div.caption {
+  text-align: left;
+  font: 12px sans-serif;
+/*  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  margin: 4px;
+  padding: 5px;
+  position: absolute;
+  right: 0;*/
+}
+
+.pollbar-container, 
+.voted .percent-bar {
+    background-color: rgba(255,255,255, 0.2);
+    margin-bottom: 12px;
+}
+
+
+.result-block {
+    position: relative;
+}
+.percent {
+/*  font-size: 0.88em;*/
+  line-height: 0.88em;
+/*  position: absolute;*/
+  width: 100%;
+/*text-shadow: 1px 1px rgb(0, 0, 0);*/
+}
+
+#thanks-for-voting,
+div:not(.voted) #refresh-results,
+.voted input#vote,
+.result-block,
+/*.voted*/ #view-results {
+	display:none;
+}
+.voted #thanks-for-voting,
+.voted #refresh-results {
+	display:inline-block!important;
+}
+.voted .result-block {
+    display: block;
+}
+.foogallery-responsive-voting.wp-polls label {
+	display: block;
+	height: 3.5em;
+	line-height:1.1em;
+}
+
+@media (max-width:479px) {
+	#main > article section .foogallery-responsive-voting img {
+		padding:0!important;
+	}
+	.fbx-link {
+	    float: left;
+	    margin-bottom: 5px;
+	    width: 25%;
+	}
+	.caption {
+		float: left;
+		width: 75%;
+	}
+}
+
+
+/* Admin Overrides */
+
+.admin-bar.post-type-foogallery.modal-open .attachments-browser .media-toolbar-secondary { float: none; }
